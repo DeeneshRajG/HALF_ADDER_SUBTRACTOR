@@ -35,7 +35,11 @@ Figure -02 HALF Subtractor
 
 **Truthtable**
 
+<img width="1536" height="1024" alt="ChatGPT Image Nov 22, 2026, 03_59_36 PM" src="https://github.com/user-attachments/assets/1cc59c39-a04d-4b5d-99fc-1ac293586861" />
+
+
 **Procedure**
+
 
 1.	Type the program in Quartus software.
 
@@ -49,13 +53,37 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
+~~~
+module HAHSexp3 (
+    input a, b,
+    output sum, carry, diff, borrow
+);
 
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+assign sum    = a ^ b;
+assign carry  = a & b;
+assign diff   = a ^ b;
+assign borrow = ~a & b;
 
-Developed by: RegisterNumber:*/
+endmodule
+~~~
+
+Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+
+Developed by:Deenesh Raj G
+
+Register Number: 212225040056
 
 **RTL Schematic**
 
+<img width="1920" height="1080" alt="Screenshot 2026-11-22 154549" src="https://github.com/user-attachments/assets/c25736e3-6305-4fc4-9b61-074f74c28eea" />
+
+
 **Output/TIMING Waveform**
 
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c06a3ad7-284e-4de2-8234-c013f8fed289" />
+
+
+
 **Result:**
+
+Thus the program executed successfully
